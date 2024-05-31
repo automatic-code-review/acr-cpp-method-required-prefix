@@ -140,7 +140,7 @@ def review_by_file(header_file, path_source, rule):
             descr_comment = descr_comment.replace("${LINE}", str(line))
 
             comments.append(commons.comment_create(
-                comment_id=commons.comment_generate_id(header_relative),
+                comment_id=commons.comment_generate_id(descr_comment),
                 comment_path=header_relative,
                 comment_description=descr_comment,
                 comment_snipset=True,
